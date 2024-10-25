@@ -1,10 +1,14 @@
-# add your code here
-# Prompt the user for the starting number, ending number, and increment
-start = int(input("Enter the starting number: "))
-end = int(input("Enter the ending number: "))
-increment = int(input("Enter the increment: "))
-
-# Output the numbers in the specified range using the given increment
-for number in range(start, end, increment):
-    print(number)
-
+# Loop through numbers from 1 to 100
+for number in range(1, 101):
+    # Check if the number is divisible by both 3 and 5
+    if number % 3 == 0 and number % 5 == 0:
+        print("FizzBuzz")
+    # Check if the number is divisible by 3
+    elif number % 3 == 0:
+        print("Fizz")
+    # Check if the number is divisible by 5
+    elif number % 5 == 0:
+        print("Buzz")
+    # If the number is not divisible by 3 or 5, print the number itself
+    else:
+        print(number)
